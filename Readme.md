@@ -1,21 +1,19 @@
-# Design Workshop
+# My-Project
 
-Project entails boilerplate code for MPFT23 Design Bootstrap Workshop. Languages used are HTML, CSS (BootStrap) and JavaScript (jQuery). Topics covered include Grid System, FontAwesome, Breakpoints for Responsiveness, jQuery Animations & UI Elements.
+Project entails boilerplate code for MPFT41/42 morning stand up session on remote repositories. Languages used are HTML and Custom CSS. Topics covered include HTML tags and Intro to CSs.
 
 ## Requirements
 
-Console or JSFiddle
+Basic Git knowledge, including an installed version of Git.
 
 ##### Technologies Used
 
-- HTML & CSS (Bootstrap)
-- FontAwesome Icons
-- Javascript (jQuery 3.4.1)
+- HTML & CSS
 
 ##### Setup Instructions and Installation
 
-- Clone this repository to a location in your file system.
-- Open terminal command line then navigate to the root folder of the application.
+- Clone this repository to a location in your file system. `git clone https://github.com/YomZsamora/my-project.git`
+- Open terminal command line then navigate to the root folder of the application. `cd my-project`
 - Open `index.html` on your browser.
 
 
@@ -42,7 +40,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ### License
 
 *MIT*
-Copyright (c) 2019 **Yommie Samora**
+Copyright (c) 2021 **Yommie Samora**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
