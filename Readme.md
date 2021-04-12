@@ -2,7 +2,7 @@
 
 Project entails boilerplate code for MPFT41/42 morning stand up session on remote repositories. Languages used are HTML and Custom CSS. Topics covered include HTML tags and Intro to CSs.
 
-## Requirements
+## Prerequisites
 
 Basic Git knowledge, including an installed version of Git.
 
