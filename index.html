@@ -11,20 +11,24 @@
 		<div class="row">
 			<div class="col-md-5">
 				<div class="intro col-xs-6 col-sm-6 col-md-12">
-					<h2 class="header">MPFT41/42 Practice Session</h2>
-					<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span>eiusmod tempor incididunt</span> ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</strong>. Duis aute irure dolor in <i>reprehenderit in voluptate</i> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+					<h2 class="header fs22">MPFT41/42 Practice Session</h2>
+					<p class="description fs11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span id="errorMessage" class="text-danger">eiusmod tempor incididunt</span> ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong id="warningMessage" class="text-warning">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</strong>. Duis aute irure dolor in <i>reprehenderit in voluptate</i> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<hr>
-				<button class="btn btn-block btn-sm next-page" onclick="getDayBorn()">Go date born</button>
+				<button id="colorButton" class="btn btn-block btn-sm next-page" href="">Change Colors</button>
 			</div>
 			<div class="col-md-4">
-				<!-- <div class="form-group">
-					<label class="col-md-8 control-label">Default Input</label>
+				<div class="form-group">
+					<label class="col-md-8 control-label">User Password</label>
 					<div class="col-xs-4 col-sm-6 col-md-12">
-						<input type="text" placeholder="Default Input" class="form-control" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+						<input id="passwordInput" type="password" placeholder="Enter your Password" class="form-control fs11">
+						<small class="text-danger fs11 wrong-password">Password is not more than 6 characters.</small>
+						<button class="btn btn-sm btn-block btn-warning mt10">Login</button>
 					</div>
-				</div> -->
+					<hr>
+					<a id="changeToAlert" href="" class="fs16">Change to an Alert Message</a>
+					<p class="footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <i>reprehenderit in voluptate</i> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
 			</div>
 			<div class="col-md-3">
 				<div>
@@ -41,7 +45,7 @@
 
 
 
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/scripts.js"></script>
 
 </body>
