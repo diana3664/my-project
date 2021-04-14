@@ -9,37 +9,66 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-5">
-				<div class="intro col-xs-6 col-sm-6 col-md-12">
-					<h2 class="header fs22">MPFT41/42 Practice Session</h2>
-					<p class="description fs11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span id="errorMessage" class="text-danger">eiusmod tempor incididunt</span> ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong id="warningMessage" class="text-warning">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</strong>. Duis aute irure dolor in <i>reprehenderit in voluptate</i> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-				<hr>
-				<button id="colorButton" class="btn btn-block btn-sm next-page" href="">Change Colors</button>
-			</div>
-			<div class="col-md-4">
-				<div class="form-group">
-					<label class="col-md-8 control-label">User Password</label>
-					<div class="col-xs-4 col-sm-6 col-md-12">
-						<input id="passwordInput" type="password" placeholder="Enter your Password" class="form-control fs11">
-						<small class="text-danger fs11 wrong-password">Password is not more than 6 characters.</small>
-						<button class="btn btn-sm btn-block btn-warning mt10">Login</button>
-					</div>
-					<hr>
-					<a id="changeToAlert" href="" class="fs16">Change to an Alert Message</a>
-					<p class="footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <i>reprehenderit in voluptate</i> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div>
-					<h6>Name Here </h6>
-					<p id="displayNameHere"></p>
-				</div>
-			</div>
-		</div>
+			<form class="form-horizontal register-form">
 
-		
-		
+				<div class="alert alert-success fs14">
+					<strong>Thanks for registering for the <span id="chosenTrack"></span> Track <span id="student"></span></strong>.<br>
+					Reason for Joining - <span id="reason"></span><br>
+					Languages - <span id="myLanguages"></span>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label fs14">Enter your Name</label>
+					<input id="fullName" type="text" name="fullName" placeholder="Enter your Full Name" class="form-control fs11">
+				</div>
+
+				<div class="form-group">
+					<label class="control-label fs14">Choose Track</label>
+					<div class="rdio rdio-default fs11">
+						<input type="radio" name="track" id="android" value="android">
+						<label for="android" > Android</label>
+					</div>
+					<div class="rdio rdio-default fs11">
+						<input type="radio" name="track" id="fullstack" value="fullstack">
+						<label for="fullstack" > Fullstack</label>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label fs14">What is the main outcome you hope to get from Moringa?</label>
+					<select id="outcome" class="form-control fs11">
+						<option value=""> - </option>
+						<option value="Strengthening my completed degree to find a job">Strengthening my completed degree to find a job</option>
+						<option value="No degree but I'm looking to get a Certificate">No degree but I'm looking to get a Certificate</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label fs14">Which Languages are you familiar with?</label>
+					<div class="ckbox ckbox-default fs11">
+						<input type="checkbox" value="javascript" name="languages" id="javascript">
+						<label for="javascript"> JavaScript</label>
+					</div>
+					<div class="ckbox ckbox-default fs11">
+						<input type="checkbox" value="python" name="languages" id="python">
+						<label for="python"> Python</label>
+					</div>
+					<div class="ckbox ckbox-default fs11">
+						<input type="checkbox" value="java" name="languages" id="java">
+						<label for="java"> Java</label>
+					</div>
+					<div class="ckbox ckbox-default fs11">
+						<input type="checkbox" value="none" name="languages" id="none">
+						<label for="none"> None</label>
+					</div>
+				</div>
+
+
+				
+
+				<button type="submit" class="btn btn-sm btn-block btn-warning">Register!</button>
+			</form>
+		</div>
 	</div>
 
 

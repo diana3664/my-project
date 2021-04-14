@@ -1,34 +1,32 @@
-// $(selector).action()
+// $(selector).action();
 
 $(document).ready(function() {
 
-    $(".wrong-password").hide();
-
-    // Change colors after click of a button
-    $("#colorButton").click(function() {
-        $("#warningMessage").removeClass("text-warning");
-        $("#warningMessage").addClass("text-primary");
-    });
-
-    // Hide element after Hover
-    $("#errorMessage").hover(function() {
-        $(this).hide();
-    });
+    $("div.alert").hide();
 
 
-    // Password length error message
-    $("#passwordInput").on('keyup', function(){
-        if($(this).val().length < 6) {
-            $(".wrong-password").show();
-        }
-        else if(($(this).val().length > 6)) {
-            $(".wrong-password").hide();
-        }
-    });
+    $(".register-form").submit(function(event) {
+        
+        // Getting the User Input
+        let studentName = $("#fullName").val();  // Get from Input
+        let chosenTrack = $('input[name="track"]:checked').val();  // Get from radio Button
+        let reason = $("#outcome").val(); // Get from Select
+        let selectedLanguages = new Array();
+        $('input[name="languages"]:checked').each(function() {
+            selectedLanguages.push(this.value);
+        });
 
-    $("#changeToAlert").on('click', function(){
-        $("p.footer").addClass("alert alert-success");
-    });
+        // Displaying the Values
+        $("#student").text(studentName);
+        $("#chosenTrack").text(chosenTrack);
+        $("#reason").text(reason);
+        $("#myLanguages").text(selectedLanguages.join(", "));
+
+        $("div.alert").show();
+
+        event.preventDefault();
+    })
+
 })
 
 
