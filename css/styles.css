@@ -68,7 +68,7 @@
 	   border-radius: 0
 }
 
-.register-form {
+.definition-list, .register-form {
 	padding-top: 20px;
 	width: 500px;
 	margin-right: auto;
@@ -76,7 +76,11 @@
 
 }
 
-
+.description {
+	text-transform: uppercase;
+	font-weight: 800;
+	cursor: pointer;
+}
 
 
 
