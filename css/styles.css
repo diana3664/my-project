@@ -81,7 +81,10 @@
 	font-weight: 800;
 	cursor: pointer;
 }
-
+.mapouter{
+	margin-left: 100px;
+	width: 100px;
+}
 
 
 
